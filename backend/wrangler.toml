@@ -1,0 +1,30 @@
+name = "backend"
+main = "src/index.ts"
+compatibility_date = "2024-12-20"
+
+# compatibility_flags = [ "nodejs_compat" ]
+
+# [vars]
+# MY_VAR = "my-variable"
+# [[kv_namespaces]]
+# binding = "MY_KV_NAMESPACE"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# [[r2_buckets]]
+# binding = "MY_BUCKET"
+# bucket_name = "my-bucket"
+
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "my-database"
+# database_id = ""
+
+# [ai]
+# binding = "AI"
+
+# [observability]
+# enabled = true
+# head_sampling_rate = 1
+[vars]
+DATABASE_URL="prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiZGY2NmMyYzAtNDA2Yy00OTQyLWFkMTQtMTJjODlkODY5NTgyIiwidGVuYW50X2lkIjoiOTc4ZjBiYmQyMjc4OTkwMjUyNmM1MGZkMTA1MzNlMjkzOTY4MGE0NDRjN2NhOTZiNGQxYmNjODBhZDgxMmQ1NCIsImludGVybmFsX3NlY3JldCI6IjU4NTFkNzNhLWQ2YWQtNGZmMC04MjQ2LTMzNzA3Y2Q0ZThjZSJ9.DwP_Kwi0jewT78mzedYWjPNSJ-ssf9jWgi2PvpULeRQ"
+SECRET = 'mySecretKey'
