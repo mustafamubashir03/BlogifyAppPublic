@@ -48,7 +48,7 @@ function EditBlog() {
         value={blog.title}
       />
 
-      <div className="px-4 py-2 bg-white rounded-b-lg dark:bg-gray-800">
+      <div className="px-4 py-2 bg-white rounded-b-lg">
         <label htmlFor="editor" className="sr-only">
           Publish Blog
         </label>
@@ -57,7 +57,7 @@ function EditBlog() {
           value={blog.content}
           id="editor"
           rows={8}
-          className="block w-full px-0 text-sm text-gray-800 bg-white dark:bg-gray-800  dark:text-white dark:placeholder-gray-400"
+          className="block w-full px-0 text-sm text-gray-800 bg-white"
           placeholder="Write an article..."
           required
         ></textarea>
