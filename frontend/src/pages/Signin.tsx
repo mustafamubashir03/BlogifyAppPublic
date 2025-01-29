@@ -33,6 +33,10 @@ function Signin() {
 
     const handleSignIn = async () => {
       try{
+        if(!signInData.email || ! signInData.password){
+          toast.warn("Kindly fill in the info")
+          return
+        }
         setLoading(true)
         const response = await axios.post(
           `${BACKEND_URL}/api/v1/auth/signin`,
