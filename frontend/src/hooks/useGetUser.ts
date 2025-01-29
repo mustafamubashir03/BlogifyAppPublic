@@ -2,6 +2,7 @@ import axios from "axios";
 import { BACKEND_URL } from "../config";
 import { useEffect, useState } from "react";
 
+
 type getUserType = {
   id: string;
   email: string;
@@ -10,12 +11,10 @@ type getUserType = {
 };
 
 export const useGetUser = () => {
-  const userExist = localStorage.getItem("userInfo");
-  const [user, setUser] = useState<getUserType>(()=> {
-    if (userExist) {
-      return JSON.parse(userExist || "");
-    } else {
-      return null;
+  const userInfo = localStorage.getItem("userInfo")
+  const [user, setUser] = useState<getUserType>(()=>{
+    if(userInfo){
+      return JSON.parse(userInfo)
     }
   });
   const [loading, setLoading] = useState(false);
@@ -31,9 +30,8 @@ export const useGetUser = () => {
       localStorage.setItem("userInfo", JSON.stringify(response.data));
       setLoading(false);
     };
-    if (!userExist) {
-      getUser();
-    }
-  }, [userExist]);
+
+    getUser();
+  }, []);
   return { loading, user };
 };

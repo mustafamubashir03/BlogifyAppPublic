@@ -20,7 +20,7 @@ function BlogsPage() {
       <Navbar />
       <div className="m-auto max-w-xl py-24">
         <div className="px-6">
-          <Heading>Hello, {user.name || ""}</Heading>
+          <Heading>Hello, {user?.name || ""}</Heading>
         </div>
         {loading === true ? (
           <BlogsPageSkeleton />
