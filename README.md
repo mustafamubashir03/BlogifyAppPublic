@@ -63,7 +63,7 @@ Check out the live version of the app:
 This project is open-source and licensed under the [MIT License](LICENSE).
 
 ## 💎 Contact
-For any questions or feedback, reach out at [your-email@example.com](mailto:your-email@example.com).
+For any questions or feedback, reach out at [mustafamubashir87@gmail.com](mailto:mustafamubashir87@gmail.com).
 
 ---
 🔗 **Follow for updates:** [GitHub](https://github.com/mustafamubashir03)
